@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Pro - Vos meilleures offres</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fab fa-amazon"></i>
+                <span>Amazon Pro</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Accueil</a>
+                <a href="#categories" class="nav-link">Catégories</a>
+                <a href="#offers" class="nav-link">Offres</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Vos Offres</span><br>
+                    <span class="highlight">Amazon Exclusives</span>
+                </h1>
+                <p class="hero-description">
+                    Découvrez les meilleures offres du moment sur Amazon. Ventes flash, outlet, coupons et plus encore. Profitez de réductions exclusives sur une sélection de produits premium.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#categories" class="btn btn-primary">
+                        <i class="fas fa-shopping-cart"></i>
+                        Voir les Offres
+                    </a>
+                    <a href="#flash-sales" class="btn btn-secondary">
+                        <i class="fas fa-bolt"></i>
+                        Ventes Flash
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-cards">
+                    <div class="card card-1">
+                        <i class="fas fa-bolt"></i>
+                        <span>-70%</span>
+                    </div>
+                    <div class="card card-2">
+                        <i class="fas fa-tag"></i>
+                        <span>Outlet</span>
+                    </div>
+                    <div class="card card-3">
+                        <i class="fas fa-certificate"></i>
+                        <span>Coupons</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50000">0</div>
+                    <div class="stat-label">Produits disponibles</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="99">0</div>
+                    <div class="stat-label">% de satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="24">0</div>
+                    <div class="stat-label">Livraison en h</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="30">0</div>
+                    <div class="stat-label">Jours de retour</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nos Catégories</h2>
+                <p class="section-subtitle">Explorez nos meilleures catégories de produits avec des offres exclusives</p>
+            </div>
+            
+            <div class="categories-grid">
+                <!-- Ventes Flash -->
+                <div class="category-card" data-category="flash-sales">
+                    <div class="category-image">
+                        <img src="https://images.frandroid.com/wp-content/uploads/2020/12/amazon_ventesflash.jpg" alt="Ventes Flash" loading="lazy">
+                        <div class="category-overlay">
+                            <div class="discount-badge">-70%</div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Ventes Flash</h3>
+                        <p>Offres limitées dans le temps avec des réductions jusqu'à -70%</p>
+                        <div class="category-features">
+                            <span class="feature"><i class="fas fa-clock"></i> Durée limitée</span>
+                            <span class="feature"><i class="fas fa-fire"></i> Très demandés</span>
+                        </div>
+                        <a href="https://www.amazon.fr/gp/goldbox?ie=UTF8&bubble-id=deals-collection-mobile-phones-and-accessories&linkCode=ll2&tag=ameliorezvotr-21&linkId=f18dd7c2dc88ba58ae8e3b5db18123f9&language=fr_FR&ref_=as_li_ss_tl" 
+                           class="btn-category" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Voir les Offres
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Outlet -->
+                <div class="category-card" data-category="outlet">
+                    <div class="category-image">
+                        <img src="https://images.bfmtv.com/PeTT_ZmDTDuGWRZAuDt0o5A0z-8=/6x69:1254x771/1248x0/images/Amazon-Outlet-le-service-qui-vous-permet-de-faire-des-economies-sur-des-centaines-de-produits-1656250.jpg" alt="Outlet" loading="lazy">
+                        <div class="category-overlay">
+                            <div class="discount-badge">Outlet</div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Outlet</h3>
+                        <p>Produits neufs et reconditionnés à prix réduits toute l'année</p>
+                        <div class="category-features">
+                            <span class="feature"><i class="fas fa-recycle"></i> Économique</span>
+                            <span class="feature"><i class="fas fa-check-circle"></i> Garantis</span>
+                        </div>
+                        <a href="https://www.amazon.fr/selection-outlet/b?ie=UTF8&node=10056877031&linkCode=ll2&tag=ameliorezvotr-21&linkId=ed39d8f32c001bdec5f95c12593fe213&language=fr_FR&ref_=as_li_ss_tl" 
+                           class="btn-category" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Découvrir l'Outlet
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coupons -->
+                <div class="category-card" data-category="coupons">
+                    <div class="category-image">
+                        <img src="https://longmedia.ca/wp-content/uploads/2021/05/coupon-amazon.jpg" alt="Coupons" loading="lazy">
+                        <div class="category-overlay">
+                            <div class="discount-badge">-€</div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Coupons</h3>
+                        <p>Réductions supplémentaires avec nos coupons exclusifs</p>
+                        <div class="category-features">
+                            <span class="feature"><i class="fas fa-ticket-alt"></i> Exclusifs</span>
+                            <span class="feature"><i class="fas fa-percentage"></i> Réductions</span>
+                        </div>
+                        <a href="https://www.amazon.fr/deals?ie=UTF8&linkCode=ll2&tag=ameliorezvotr-21&linkId=753b4734575e7af0416b4521518eadc2&language=fr_FR&ref_=as_li_ss_tl" 
+                           class="btn-category" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Voir les Coupons
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Meilleures Ventes -->
+                <div class="category-card" data-category="bestsellers">
+                    <div class="category-image">
+                        <img src="https://www.leparisien.fr/resizer/K_2xkZyIQbq6HURztZByN_1n7AY=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/lpguideshopping/5I4XR2NDGZB7FBGIT7DYDZNDAY.jpg" alt="Meilleures Ventes" loading="lazy">
+                        <div class="category-overlay">
+                            <div class="discount-badge">Top</div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Meilleures Ventes</h3>
+                        <p>Les produits les plus vendus et appréciés par nos clients</p>
+                        <div class="category-features">
+                            <span class="feature"><i class="fas fa-star"></i> Populaires</span>
+                            <span class="feature"><i class="fas fa-users"></i> Avis vérifiés</span>
+                        </div>
+                        <a href="https://www.amazon.fr/gp/bestsellers?ie=UTF8&linkCode=ll2&tag=ameliorezvotr-21&linkId=579d8e61a18d609a01d1382e2e7d1fbd&language=fr_FR&ref_=as_li_ss_tl" 
+                           class="btn-category" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Voir le Top
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Amazon Seconde Main -->
+                <div class="category-card" data-category="warehouse">
+                    <div class="category-image">
+                        <img src="https://media.ouest-france.fr/v1/pictures/MjAyNTA5NDRkMzFjZjYwYjZjOGRhMWU3YjI4NmY1MzkwZDUzZWY?width=1260&height=708&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=662a0a1f2b97f4916696b9a5488c6e5cd33d7210fc040207a523396bac05f334" alt="Amazon Seconde Main" loading="lazy">
+                        <div class="category-overlay">
+                            <div class="discount-badge">-50%</div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h3>Amazon Seconde Main</h3>
+                        <p>Produits vérifiés et testés avec garantie jusqu'à 2 ans</p>
+                        <div class="category-features">
+                            <span class="feature"><i class="fas fa-shield-alt"></i> Garantis</span>
+                            <span class="feature"><i class="fas fa-leaf"></i> Écolo</span>
+                        </div>
+                        <a href="https://www.amazon.fr/b?node=3581943031&linkCode=ll2&tag=ameliorezvotr-21&linkId=e36811befd05754f694ed84ce58d29ce&language=fr_FR&ref_=as_li_ss_tl" 
+                           class="btn-category" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Voir les Deals
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Sales Timer -->
+    <section id="flash-sales" class="flash-sales">
+        <div class="container">
+            <div class="flash-sales-header">
+                <h2><i class="fas fa-bolt"></i> Ventes Flash en Cours</h2>
+                <div class="timer-container">
+                    <div class="timer-label">Fin dans :</div>
+                    <div class="timer" id="flash-timer">
+                        <div class="time-unit">
+                            <span id="hours">12</span>
+                            <span class="time-label">h</span>
+                        </div>
+                        <div class="time-unit">
+                            <span id="minutes">34</span>
+                            <span class="time-label">m</span>
+                        </div>
+                        <div class="time-unit">
+                            <span id="seconds">56</span>
+                            <span class="time-label">s</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flash-products">
+                <div class="flash-product">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=300&h=300&fit=crop" alt="Produit Flash 1" loading="lazy">
+                        <div class="flash-badge">-65%</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Écouteurs Bluetooth Pro</h4>
+                        <div class="price">
+                            <span class="old-price">99€</span>
+                            <span class="new-price">34€</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                            <span class="progress-text">75% vendus</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flash-product">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=300&h=300&fit=crop" alt="Produit Flash 2" loading="lazy">
+                        <div class="flash-badge">-50%</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>PC Portable Gaming</h4>
+                        <div class="price">
+                            <span class="old-price">1299€</span>
+                            <span class="new-price">649€</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 45%"></div>
+                            <span class="progress-text">45% vendus</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flash-product">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=300&h=300&fit=crop" alt="Produit Flash 3" loading="lazy">
+                        <div class="flash-badge">-40%</div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Robot Aspirateur Intelligent</h4>
+                        <div class="price">
+                            <span class="old-price">399€</span>
+                            <span class="new-price">239€</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                            <span class="progress-text">85% vendus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flash-cta">
+                <a href="https://www.amazon.fr/gp/goldbox?ie=UTF8&bubble-id=deals-collection-mobile-phones-and-accessories&linkCode=ll2&tag=ameliorezvotr-21&linkId=f18dd7c2dc88ba58ae8e3b5db18123f9&language=fr_FR&ref_=as_li_ss_tl" 
+                   class="btn btn-primary btn-large" target="_blank">
+                    <i class="fas fa-bolt"></i>
+                    Voir Toutes les Ventes Flash
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Ne manquez aucune offre !</h2>
+                    <p>Recevez les meilleures offres Amazon directement dans votre boîte mail</p>
+                </div>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Votre adresse email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            S'abonner
+                        </button>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="newsletter-terms" required>
+                        <label for="newsletter-terms">J'accepte de recevoir les offres par email</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Amazon Pro</h3>
+                    <p>Votre partenaire pour les meilleures offres Amazon. Découvrez nos sélections exclusives et profitez de réductions exceptionnelles.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Catégories</h4>
+                    <ul>
+                        <li><a href="https://www.amazon.fr/gp/goldbox?ie=UTF8&bubble-id=deals-collection-mobile-phones-and-accessories&linkCode=ll2&tag=ameliorezvotr-21&linkId=f18dd7c2dc88ba58ae8e3b5db18123f9&language=fr_FR&ref_=as_li_ss_tl" target="_blank">Ventes Flash</a></li>
+                        <li><a href="https://www.amazon.fr/selection-outlet/b?ie=UTF8&node=10056877031&linkCode=ll2&tag=ameliorezvotr-21&linkId=ed39d8f32c001bdec5f95c12593fe213&language=fr_FR&ref_=as_li_ss_tl" target="_blank">Outlet</a></li>
+                        <li><a href="https://www.amazon.fr/deals?ie=UTF8&linkCode=ll2&tag=ameliorezvotr-21&linkId=753b4734575e7af0416b4521518eadc2&language=fr_FR&ref_=as_li_ss_tl" target="_blank">Coupons</a></li>
+                        <li><a href="https://www.amazon.fr/gp/bestsellers?ie=UTF8&linkCode=ll2&tag=ameliorezvotr-21&linkId=579d8e61a18d609a01d1382e2e7d1fbd&language=fr_FR&ref_=as_li_ss_tl" target="_blank">Meilleures Ventes</a></li>
+                        <li><a href="https://www.amazon.fr/b?node=3581943031&linkCode=ll2&tag=ameliorezvotr-21&linkId=e36811befd05754f694ed84ce58d29ce&language=fr_FR&ref_=as_li_ss_tl" target="_blank">Seconde Main</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Retours</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Conditions d'utilisation</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Amazon Pro. Tous droits réservés. Partenaire Amazon - *Les liens peuvent contenir des liens d'affiliation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
