@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>{{CATEGORIE}} - Amazon Pro</title>
+  <meta name="description" content="Les meilleures offres {{CATEGORIE}} Amazon sélectionnées chaque jour.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="/assets/css/categorie.css" as="style">
+  <link rel="preload" href="https://amazon.fr" as="fetch" crossorigin>
+  <link rel="stylesheet" href="/assets/css/categorie.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {{#each produits}}
+      {
+        "@type": "ListItem",
+        "position": {{@index}},
+        "url": "https://votresite.com{{slug}}.html",
+        "name": "{{titre}}"
+      }{{#unless @last}},{{/unless}}
+      {{/each}}
+    ]
+  }
+  </script>
+</head>
+<body>
+<header class="navbar">
+  <a href="/" class="nav-logo"><i class="fab fa-amazon"></i> Amazon Pro</a>
+</header>
+
+<main class="container">
+  <h1>Offres {{CATEGORIE}} du moment</h1>
+  <p class="intro">Sélection Amazon mise à jour quotidiennement.</p>
+
+  <div class="grid">
+    {{#each produits}}
+    <article class="card">
+      <picture>
+        <source srcset="/assets/images/{{id}}.webp" type="image/webp">
+        <img loading="lazy" src="/assets/images/{{id}}.jpg" alt="{{titre}}">
+      </picture>
+      <div class="badge">{{remise}}</div>
+      <h2>{{titre}}</h2>
+      <p class="price">
+        <span class="old">{{prixBase}} €</span>
+        <span class="new">{{prixPromo}} €</span>
+      </p>
+      <a class="btn" href="{{lienAmazon}}" target="_blank" rel="nofollow noopener">Voir sur Amazon</a>
+    </article>
+    {{/each}}
+  </div>
+</main>
+
+<section class="newsletter">
+  <h3>Ne ratez plus aucun deal</h3>
+  <form id="newsletter">
+    <input type="email" placeholder="Votre email" required>
+    <button type="submit">S'abonner</button>
+  </form>
+</section>
+
+<script src="/assets/js/categorie.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>{{TITRE}} - Promo Amazon</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/produit.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "{{TITRE}}",
+    "image": "https://votresite.com/assets/images/{{id}}.webp",
+    "description": "{{DESCRIPTION}}",
+    "offers": {
+      "@type": "Offer",
+      "url": "{{lienAmazon}}",
+      "priceCurrency": "EUR",
+      "price": "{{prixPromo}}",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+</head>
+<body>
+<header class="navbar"><a href="/">Amazon Pro</a></header>
+
+<article class="product">
+  <div class="col-gauche">
+    <picture>
+      <source srcset="/assets/images/{{id}}.webp" type="image/webp">
+      <img loading="lazy" src="/assets/images/{{id}}.jpg" alt="{{TITRE}}">
+    </picture>
+  </div>
+  <div class="col-droite">
+    <h1>{{TITRE}}</h1>
+    <p class="price"><span class="old">{{prixBase}} €</span> <span class="new">{{prixPromo}} €</span></p>
+    <ul class="bullets">
+      <li>Livraison Amazon Prime 24 h</li>
+      <li>Garantie 2 ans</li>
+      <li>Économisez {{remise}}</li>
+    </ul>
+    <a class="btn" href="{{lienAmazon}}" target="_blank" rel="nofollow noopener">Acheter sur Amazon</a>
+    <small>* Partenaire Amazon – commission sur achat</small>
+  </div>
+</article>
+
+<section class="faq" itemscope itemtype="https://schema.org/FAQPage">
+  <h2>Questions fréquentes</h2>
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Est-ce neuf ?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Oui, vendu et expédié par Amazon.</p>
+    </div>
+  </div>
+</section>
+
+<script src="/assets/js/produit.js"></script>
+</body>
+</html>

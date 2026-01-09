@@ -1,0 +1,7 @@
+.product{display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:1000px;margin:2rem auto;background:#fff;padding:2rem;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.col-gauche img{width:100%;border-radius:8px}
+.col-droite{display:flex;flex-direction:column;justify-content:center}
+.price .new{font-size:2rem;font-weight:800;color:var(--c)}
+.bullets{margin:1rem 0 1.5rem;padding-left:1.2rem}
+.faq{background:var(--f);padding:2rem;margin-top:3rem;border-radius:12px}
+@media(max-width:700px){.product{grid-template-columns:1fr}}
